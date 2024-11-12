@@ -1,0 +1,161 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #4fc3f7;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Main Section Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 2rem;
+}
+
+/* Login Section */
+.login-section {
+    text-align: center;
+    width: 100%;
+}
+
+.login-section h2 {
+    color: #0288d1;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Grid Container for Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 25rem;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #0288d1;
+    margin-top: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 1rem 0;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #4fc3f7;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #0288d1;
+}
+
+/* Footer Styling */
+footer {
+    position:sticky;
+    bottom: 0%;
+    text-align: center;
+    padding: 1rem;
+    background-color: #4fc3f7;
+    color: white;
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Tablets: Reduce number of cards per row */
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 2 or 3 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile Devices: Stack cards vertically */
+    .card-container {
+        grid-template-columns: 1fr; /* 1 card per row */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Slightly smaller header */
+    }
+
+    header p {
+        font-size: 0.875rem;
+    }
+
+    .login-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller mobile screens: Adjust font sizes and button sizes */
+    .card-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+

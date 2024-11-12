@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Interface</title>
+    <link rel="stylesheet" href="PatientHistory.css">
+</head>
+<body>
+    <header>
+        <h1>Patient Dashboard</h1>
+    </header>
+
+    <main class="main-content">
+        <section class="card-section">
+            <!-- Lab Report Card -->
+            <div class="card" onclick="window.location.href='lab-report.html'">
+                <img src="images\Reports.png" alt="Lab Report Icon" class="card-image">
+                <div class="card-content">
+                    <h3>Lab Report</h3>
+                    <p>View your lab test reports.</p>
+                </div>
+            </div>
+
+            <!-- Medical History Card -->
+            <div class="card" onclick="window.location.href='medical-history.html'">
+                <img src="images\Paper Analysis.png" alt="Medical History Icon" class="card-image">
+                <div class="card-content">
+                    <h3>Medical History</h3>
+                    <p>View your past medical records.</p>
+                </div>
+            </div>
+
+            <!-- Prescription Card -->
+            <div class="card" onclick="window.location.href='prescription.html'">
+                <img src="images\Prescription.png" alt="Prescription Icon" class="card-image">
+                <div class="card-content">
+                    <h3>Prescription</h3>
+                    <p>View your current prescriptions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Swasthyasuchi. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
